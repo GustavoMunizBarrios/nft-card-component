@@ -66,14 +66,26 @@ body {
 }
 .card-information {
     display: flex;
-    /* justify-content: space-between; */
-    /* width: 284px; */
+    justify-content: space-between;
+    align-items: center;    
+    height: 50px;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    width: 284px;
 }
 .card-information .eth {
     display: flex;
+    width: 98px;
 }
 .card-information .days {
     display: flex;
+    align-items: center;
+    width: 98px;
+}
+.card-information .days img {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+
 }
 .card-information-eth{
     font-size: 1.5rem;
@@ -83,24 +95,45 @@ body {
 }
 .card-information-days{
     font-size: 1.55rem;
-    /* width: 60px; */
+    
     color: var(--Soft-blue);
 }
+/******************************************************/
 .card-creation {
     display: flex;
+    align-items: center;
+    width: 284px;
+    height: 70px;
+    font-size: 1.55rem;
 }
 .card-creation img {
     width: 32px;
+    height: 32px;
     border: 1px solid white;
     border-radius: 50%;
 }
 .card-creation p {
     color: var(--Soft-blue);
+    margin-left: 18px;
 }
 .card-creation a {
     color: var(--white);
     text-decoration: none;
 }
+/***********FOOTER*******************/
+footer {
+    text-align: center; 
+    position: absolute;
+    height: 25px;
+    bottom: 0;
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+}
+.attribution { 
+    font-size: 11px; 
+    
+    color: white;
+
+}
+.attribution a { 
+    color: var(--Soft-blue); 
+}
