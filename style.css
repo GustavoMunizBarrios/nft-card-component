@@ -9,5 +9,98 @@ html {
  /*   background-color: var(--Light-gray); */ 
 }
 
+:root{
+    /* Primary colors  */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral colors*/
+    --Very-dark-blue-main-BG:  hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-blue-main-BG);
+}
+/* NFT CARD */
+
+.card {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--Very-dark-blue-card-BG);
+
+}
+
+.card-imageNft {
+    width: 284px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.card-title {
+    color: var(--white);
+    font-size: 2.1rem;
+    font-weight: 550;
+    width: auto;
+    margin-right: 98px;
+    margin-top: 24px;
+
+}
+.card-text {
+    color: var(--Soft-blue);
+    width: 280px;
+    font-size: 1.55rem;
+    font-weight: 300;
+    margin-top: 16px;
+    line-height: 2.5rem;
+}
+.card-information {
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 284px; */
+}
+.card-information .eth {
+    display: flex;
+}
+.card-information .days {
+    display: flex;
+}
+.card-information-eth{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--Cyan);
+    margin-left: 6px;
+}
+.card-information-days{
+    font-size: 1.55rem;
+    /* width: 60px; */
+    color: var(--Soft-blue);
+}
+.card-creation {
+    display: flex;
+}
+.card-creation img {
+    width: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.card-creation p {
+    color: var(--Soft-blue);
+}
+.card-creation a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
