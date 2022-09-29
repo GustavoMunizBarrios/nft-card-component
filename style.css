@@ -41,10 +41,53 @@ body {
 
 }
 
-.card-imageNft {
+.card-image{
+    position: relative;
+    width: 328px;
+    height: 320px;
+    top: 0;
+    left: 0;
+}
+
+.card-image-Nft {
+    position: relative;
     width: 284px;
     border-radius: 8px;
-    margin-top: 24px;
+    top: 22px;
+    left: 22px;
+ 
+}
+.card-image-background {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    opacity: 0;
+    background-color: var(--Cyan);
+    width: 284px;
+    height: 284px;
+    border-radius: 8px;
+ 
+}
+.card-image-icon {
+    position: absolute;
+    top: 140px;
+    right: 140px;
+    opacity: 0;
+
+}
+
+.card-image:hover .card-image-background {
+    opacity: 1;
+}
+ 
+.card-image:hover .card-image-Nft{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.card-image:hover .card-image-icon{ 
+    opacity: 1;
+    cursor: pointer;
+    
 }
 
 .card-title {
@@ -53,8 +96,12 @@ body {
     font-weight: 550;
     width: auto;
     margin-right: 98px;
-    margin-top: 24px;
+    margin-top: 10px;
 
+}
+.card-title:hover{
+    cursor: pointer;
+    color: var(--Cyan);
 }
 .card-text {
     color: var(--Soft-blue);
@@ -119,6 +166,9 @@ body {
 .card-creation a {
     color: var(--white);
     text-decoration: none;
+}
+.card-creation a:hover{
+    color: var(--Cyan);
 }
 /***********FOOTER*******************/
 footer {
